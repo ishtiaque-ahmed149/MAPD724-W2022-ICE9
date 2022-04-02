@@ -24,6 +24,9 @@
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Get Image"/>
+                                <connections>
+                                    <action selector="getImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4dF-xC-pl7"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cye-qS-eKj">
                                 <rect key="frame" x="19" y="163" width="375" height="485"/>
@@ -53,6 +56,10 @@
                             <constraint firstItem="NMv-Pw-odu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="r2o-nt-1uJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="5sU-HE-jgc" id="zne-P9-1Rw"/>
+                        <outlet property="pictureChosen" destination="Cye-qS-eKj" id="euX-3x-08N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
